@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>乐山市深度旅行研究报告 · 嘉州 · 佛都</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --card-bg: #ffffff;
+    --text: #1a1a2e;
+    --muted: #666;
+    --gold: #c9a84c;
+    --red: #e94560;
+    --blue: #0f3460;
+    --dark: #16213e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    padding: 48px 24px 40px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
+    color: var(--gold);
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  .hero .subtitle {
+    color: #a0a0c0;
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  .hero .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .hero .tag {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+  /* Content */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px;
+  }
+  /* Report body */
+  .report {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 40px 36px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+  }
+  .report h1 { font-size: 1.6rem; color: var(--blue); margin-bottom: 20px; }
+  .report h2 {
+    font-size: 1.3rem;
+    color: var(--blue);
+    margin: 32px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .report h3 { font-size: 1.1rem; color: var(--red); margin: 20px 0 10px; }
+  .report p { margin: 8px 0; font-size: 0.95rem; }
+  .report blockquote {
+    background: #f9f5e8;
+    border-left: 4px solid var(--gold);
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-style: italic;
+    color: #555;
+  }
+  .report hr { border: none; border-top: 1px solid #eee; margin: 24px 0; }
+  .report ul, .report ol { margin: 10px 0 10px 24px; font-size: 0.95rem; }
+  .report li { margin: 4px 0; }
+  .report table.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9rem;
+  }
+  .report table.report-table th {
+    background: var(--blue);
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .report table.report-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .report table.report-table tr:hover td { background: #f5f5f0; }
+  .report code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
+  }
+  /* SVG Cards */
+  .cards-section {
+    margin-bottom: 40px;
+  }
+  .cards-section h2 {
+    font-size: 1.3rem;
+    color: var(--blue);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+  }
+  .card svg { width: 100%; height: auto; display: block; }
+  .card .card-label {
+    padding: 12px 20px;
+    background: var(--dark);
+    color: var(--gold);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding: 24px;
+    border-top: 1px solid #e0e0e0;
+  }
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.8rem; }
+    .report { padding: 24px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>乐山 · 嘉州 · 佛都</h1>
+  <div class="subtitle">深度旅行研究报告 · 古称嘉州 · 三江汇流 · 世界遗产 · 中国美食之都</div>
+  <div class="tags">
+    <span class="tag">乐山大佛 71米</span>
+    <span class="tag">峨眉山金顶 3079m</span>
+    <span class="tag">跷脚牛肉</span>
+    <span class="tag">钵钵鸡</span>
+    <span class="tag">甜皮鸭</span>
+    <span class="tag">UNESCO 双重遗产</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="cards-section">
+    <h2>📌 可视化卡片</h2>
+    <div class="card">
+      <div class="card-label">城市概览卡 · 历史 / 古建 / 美食</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#1a1a2e"/>
+  <!-- 外框 -->
+  <rect x="15" y="15" width="770" height="470" rx="12" fill="none" stroke="#c9a84c" stroke-width="2" stroke-dasharray="8,4"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="55" text-anchor="middle" font-family="serif" font-size="28" fill="#c9a84c" font-weight="bold">乐山 · 嘉州 · 佛都</text>
+  <text x="400" y="82" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a0a0c0">三江汇流 · 世界遗产 · 中国美食之都 · 古蜀文明3000年</text>
+  <line x1="40" y1="95" x2="760" y2="95" stroke="#c9a84c" stroke-width="1" opacity="0.5"/>
+  
+  <!-- 三栏 -->
+  <!-- 左栏：历史文化 -->
+  <rect x="40" y="110" width="230" height="290" rx="8" fill="#16213e" stroke="#c9a84c" stroke-width="1"/>
+  <text x="155" y="140" text-anchor="middle" font-size="16" fill="#e94560" font-weight="bold" font-family="sans-serif">历史文化</text>
+  <line x1="60" y1="152" x2="250" y2="152" stroke="#e94560" stroke-width="1" opacity="0.5"/>
+  <text x="55" y="178" font-size="13" fill="#e8e8e8" font-family="sans-serif">古称「嘉州」「犍为郡」</text>
+  <text x="55" y="203" font-size="13" fill="#e8e8e8">秦汉置郡·唐宋鼎盛·明清盐帮</text>
+  <text x="55" y="228" font-size="13" fill="#e8e8e8">大佛开凿：唐713-803年</text>
+  <text x="55" y="253" font-size="13" fill="#e8e8e8">历时90年·高71米</text>
+  <text x="55" y="278" font-size="13" fill="#e8e8e8">世界最大石刻弥勒佛</text>
+  <text x="55" y="308" font-size="12" fill="#a0a0c0">李白·嘉州·「问余何意栖碧山」</text>
+  <text x="55" y="333" font-size="12" fill="#a0a0c0">宋「嘉定白宰鸡」今仍传承</text>
+  <text x="55" y="358" font-size="12" fill="#a0a0c0">川超「味道非常队」2026活跃</text>
+  <text x="55" y="383" font-size="12" fill="#a0a0c0">沐川竹海·马边彝寨活态文化</text>
+  
+  <!-- 中栏：镇馆之宝/古建 -->
+  <rect x="285" y="110" width="230" height="290" rx="8" fill="#16213e" stroke="#c9a84c" stroke-width="1"/>
+  <text x="400" y="140" text-anchor="middle" font-size="16" fill="#e94560" font-weight="bold" font-family="sans-serif">古建与遗产</text>
+  <line x1="305" y1="152" x2="495" y2="152" stroke="#e94560" stroke-width="1" opacity="0.5"/>
+  <text x="300" y="178" font-size="13" fill="#e8e8e8">乐山大佛（唐）—— 71米</text>
+  <text x="300" y="203" font-size="13" fill="#e8e8e8">峨眉山金顶十方普贤（明）</text>
+  <text x="300" y="228" font-size="13" fill="#e8e8e8">万年寺铜殿（明）· 海拔3079m</text>
+  <text x="300" y="253" font-size="13" fill="#e8e8e8">乌尤寺（唐）· 凌云寺（唐/清）</text>
+  <text x="300" y="278" font-size="13" fill="#e8e8e8">沙湾古镇（明）· 茶马古道驿站</text>
+  <text x="300" y="303" font-size="13" fill="#e8e8e8">沐川竹海（清）· 万亩竹林</text>
+  <text x="300" y="333" font-size="12" fill="#a0a0c0">UNESCO 1996 双重遗产：峨眉山—大佛</text>
+  <text x="300" y="358" font-size="12" fill="#a0a0c0">栈道下行·大佛佛脚·视觉震撼</text>
+  <text x="300" y="383" font-size="12" fill="#a0a0c0">乘船游三江·白天70元/人</text>
+  
+  <!-- 右栏：美食 -->
+  <rect x="530" y="110" width="230" height="290" rx="8" fill="#16213e" stroke="#c9a84c" stroke-width="1"/>
+  <text x="645" y="140" text-anchor="middle" font-size="16" fill="#e94560" font-weight="bold" font-family="sans-serif">美食之都</text>
+  <line x1="550" y1="152" x2="740" y2="152" stroke="#e94560" stroke-width="1" opacity="0.5"/>
+  <text x="545" y="178" font-size="13" fill="#e8e8e8">跷脚牛肉 —— 苏稽镇「五世方」</text>
+  <text x="545" y="203" font-size="13" fill="#e8e8e8">钵钵鸡 —— 古真记/纪老四</text>
+  <text x="545" y="228" font-size="13" fill="#e8e8e8">甜皮鸭 —— 纪六娘/杨三串</text>
+  <text x="545" y="253" font-size="13" fill="#e8e8e8">麻辣烫 —— 牛华镇（发源地）</text>
+  <text x="545" y="278" font-size="13" fill="#e8e8e8">油炸串串 —— 张公桥/嘉兴路</text>
+  <text x="545" y="303" font-size="13" fill="#e8e8e8">嘉定白宰鸡 —— 宋代传承名菜</text>
+  <text x="545" y="333" font-size="12" fill="#a0a0c0">「吃在四川，味在乐山」</text>
+  <text x="545" y="358" font-size="12" fill="#a0a0c0">UNESCO 2014 中国美食之都</text>
+  <text x="545" y="383" font-size="12" fill="#a0a0c0">张公桥（游客）/ 嘉兴路（本地）</text>
+  
+  <!-- 底部信息栏 -->
+  <rect x="40" y="415" width="720" height="60" rx="6" fill="#0f3460" stroke="#c9a84c" stroke-width="1"/>
+  <text x="400" y="437" text-anchor="middle" font-size="14" fill="#c9a84c" font-family="sans-serif">⚡ 出行速查</text>
+  <text x="400" y="460" text-anchor="middle" font-size="12" fill="#e8e8e8">成都→乐山 动车1.5h · 大佛门票80元 · 峨眉门票160元+观光车90元 · 最佳季节：秋（金顶云海）/ 夏（夜游大佛）</text>
+  <text x="400" y="478" text-anchor="middle" font-size="11" fill="#a0a0c0">乐山大佛景区·乌尤寺码头乘船70元/人·30分钟·远观71米大佛全貌</text>
+</svg>
+
+    </div>
+    <div class="card">
+      <div class="card-label">三日经典行程 · Day 1 / Day 2 / Day 3</div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#1a1a2e"/>
+  <rect x="15" y="15" width="770" height="470" rx="12" fill="none" stroke="#c9a84c" stroke-width="2" stroke-dasharray="8,4"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="52" text-anchor="middle" font-size="24" fill="#c9a84c" font-weight="bold" font-family="serif">乐山三日经典行程</text>
+  <text x="400" y="75" text-anchor="middle" font-size="12" fill="#a0a0c0" font-family="sans-serif">大佛 · 峨眉 · 美食 | 从市区到山间，从清晨到深夜</text>
+  <line x1="40" y1="88" x2="760" y2="88" stroke="#c9a84c" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Day 1 -->
+  <rect x="40" y="100" width="235" height="370" rx="8" fill="#16213e" stroke="#e94560" stroke-width="1.5"/>
+  <rect x="40" y="100" width="235" height="36" rx="8" fill="#e94560"/>
+  <text x="157" y="124" text-anchor="middle" font-size="15" fill="#fff" font-weight="bold" font-family="sans-serif">DAY 1 · 市区 + 大佛</text>
+  <text x="55" y="160" font-size="12" fill="#e8e8e8" font-family="sans-serif">08:00  张公桥/嘉兴路早餐</text>
+  <text x="55" y="180" font-size="11" fill="#a0a0c0">豆腐脑 + 咔饼（5-10元）</text>
+  <text x="55" y="205" font-size="12" fill="#e8e8e8">10:00  乐山大佛景区（3-4h）</text>
+  <text x="55" y="222" font-size="11" fill="#a0a0c0">栈道下行·乌尤寺·凌云寺</text>
+  <text x="55" y="247" font-size="12" fill="#e8e8e8">乌尤寺码头  乘船游三江</text>
+  <text x="55" y="264" font-size="11" fill="#a0a0c0">70元/人 · 30min · 远观71米大佛</text>
+  <text x="55" y="289" font-size="12" fill="#e8e8e8">14:00  午餐 苏稽镇</text>
+  <text x="55" y="306" font-size="11" fill="#a0a0c0">「五世方」跷脚牛肉（百年老店）</text>
+  <text x="55" y="331" font-size="12" fill="#e8e8e8">15:00  上中顺特色街区</text>
+  <text x="55" y="348" font-size="11" fill="#a0a0c0">民国风·汉服拍摄·下午茶</text>
+  <text x="55" y="373" font-size="12" fill="#e8e8e8">18:00  晚餐 张公桥</text>
+  <text x="55" y="390" font-size="11" fill="#a0a0c0">油炸串串 + 钵钵鸡 + 甜皮鸭</text>
+  <text x="55" y="415" font-size="12" fill="#e8e8e8">20:00  夜游三江（夏季）</text>
+  <text x="55" y="432" font-size="11" fill="#a0a0c0">大佛夜景 · 灯光剪影</text>
+  <text x="55" y="455" font-size="11" fill="#c9a84c">⚠ 栈道恐高慎选上行路线</text>
+  
+  <!-- Day 2 -->
+  <rect x="290" y="100" width="235" height="370" rx="8" fill="#16213e" stroke="#c9a84c" stroke-width="1.5"/>
+  <rect x="290" y="100" width="235" height="36" rx="8" fill="#c9a84c"/>
+  <text x="407" y="124" text-anchor="middle" font-size="15" fill="#1a1a2e" font-weight="bold" font-family="sans-serif">DAY 2 · 峨眉山</text>
+  <text x="305" y="160" font-size="12" fill="#e8e8e8" font-family="sans-serif">07:00  进山（报国寺方向）</text>
+  <text x="305" y="177" font-size="11" fill="#a0a0c0">门票160元 + 观光车90元</text>
+  <text x="305" y="202" font-size="12" fill="#e8e8e8">万年寺 → 洗象池 → 金顶</text>
+  <text x="305" y="219" font-size="11" fill="#a0a0c0">金顶海拔3079m · 云海黄金时段</text>
+  <text x="305" y="244" font-size="12" fill="#e8e8e8">金顶 十方普贤金像</text>
+  <text x="305" y="261" font-size="11" fill="#a0a0c0">明代金顶 · 金像·云海·日出</text>
+  <text x="305" y="286" font-size="12" fill="#e8e8e8">12:00  山上素斋午餐</text>
+  <text x="305" y="303" font-size="11" fill="#a0a0c0">报国寺/万年寺素斋（提前预约）</text>
+  <text x="305" y="328" font-size="12" fill="#e8e8e8">14:00  下山</text>
+  <text x="305" y="345" font-size="11" fill="#a0a0c0">途经洗象池（清代古建）</text>
+  <text x="305" y="370" font-size="12" fill="#e8e8e8">16:00  乐山博物馆</text>
+  <text x="305" y="387" font-size="11" fill="#a0a0c0">免费 · 汉代陶俑 · 犍为青铜</text>
+  <text x="305" y="412" font-size="12" fill="#e8e8e8">18:00  牛华镇麻辣烫</text>
+  <text x="305" y="429" font-size="11" fill="#a0a0c0">发源地·醇厚锅底·独一份</text>
+  <text x="305" y="455" font-size="11" fill="#c9a84c">⚠ 金顶冬季有积雪·备防滑鞋</text>
+  
+  <!-- Day 3 -->
+  <rect x="540" y="100" width="235" height="370" rx="8" fill="#16213e" stroke="#0f3460" stroke-width="1.5"/>
+  <rect x="540" y="100" width="235" height="36" rx="8" fill="#0f3460"/>
+  <text x="657" y="124" text-anchor="middle" font-size="15" fill="#c9a84c" font-weight="bold" font-family="sans-serif">DAY 3 · 沙湾 + 补漏</text>
+  <text x="555" y="160" font-size="12" fill="#e8e8e8" font-family="sans-serif">08:30  沙湾古镇</text>
+  <text x="555" y="177" font-size="11" fill="#a0a0c0">茶马古道驿站 · 免费 · 2-3h</text>
+  <text x="555" y="202" font-size="11" fill="#a0a0c0">「川西小瑞士」· 轻徒步·拍照</text>
+  <text x="555" y="227" font-size="12" fill="#e8e8e8">12:00  午餐 沙湾古镇</text>
+  <text x="555" y="244" font-size="11" fill="#a0a0c0">「嘉定白宰鸡」（宋代传承）</text>
+  <text x="555" y="269" font-size="12" fill="#e8e8e8">14:00  五通桥「甜城」</text>
+  <text x="555" y="286" font-size="11" fill="#a0a0c0">甜食品产地 · 特色伴手礼</text>
+  <text x="555" y="311" font-size="12" fill="#e8e8e8">16:00  马边彝寨（可选）</text>
+  <text x="555" y="328" font-size="11" fill="#a0a0c0">彝族扎染 · 银饰 · 火把节</text>
+  <text x="555" y="353" font-size="12" fill="#e8e8e8">18:00  返程</text>
+  <text x="555" y="370" font-size="11" fill="#a0a0c0">乐山站/乐山机场</text>
+  <text x="555" y="400" font-size="11" fill="#a0a0c0">或改：沐川竹海（万亩竹林）</text>
+  <text x="555" y="418" font-size="11" fill="#a0a0c0">摄影·「竹林七贤」意境</text>
+  <text x="555" y="455" font-size="11" fill="#c9a84c">💡 四日深度线 = +沐川竹海/马边彝寨</text>
+</svg>
+    </div>
+  </div>
+
+  <div class="report">
+    <h1>乐山市深度旅行研究报告</h1>
+<blockquote>古称「嘉州」· 佛都 · 美食之都 · 三江交汇之城</blockquote>
+<blockquote>生成时间：2026-09-27</blockquote>
+<hr/>
+<h2>一、城市概览</h2>
+<table class="report-table">
+<tr><th>项目</th><th>内容</th></tr>
+<tr><td>古称</td><td>嘉州、嘉定</td></tr>
+<tr><td>地理位置</td><td>四川盆地西南，岷江、青衣江、大渡河三江交汇处</td></tr>
+<tr><td>距成都</td><td>约162公里（动车约1.5小时）</td></tr>
+<tr><td>世界遗产</td><td>峨眉山—乐山大佛（1996年UNESCO双重遗产）</td></tr>
+<tr><td>历史积淀</td><td>3000余年古蜀文明</td></tr>
+<tr><td>城市定位</td><td>国家历史文化名城、中国美食之都（UNESCO 2014）</td></tr>
+</table>
+<p><strong>核心标签：</strong></p>
+<ul>
+<li>佛都：乐山大佛+峨眉山佛教文化双核</li>
+<li>美食之都：「吃在四川，味在乐山」</li>
+<li>三江之城：岷江、青衣江、大渡河汇合处</li>
+<li>茶乡：沐川苦丁茶、峨眉雪芽</li>
+</ul>
+<hr/>
+<h2>二、历史分层探索</h2>
+<h3>先秦 — 古蜀文明</h3>
+<p>乐山地区属古蜀「邛」地，先秦时期为僚人聚居区，有三星堆文化辐射痕迹。沐川、马边一带有古僰人岩画遗存。</p>
+<h3>秦汉 — 置郡建县</h3>
+<ul>
+<li>秦昭王二十九年（前278年）置「犍为郡」，为四川最早建制之一</li>
+<li>辖治范围极广，涵盖今乐山、宜宾、攀枝花、泸州及云南东北部</li>
+<li>古称「犍为」是乐山最古老的行政名称</li>
+</ul>
+<h3>唐宋 — 嘉州鼎盛</h3>
+<ul>
+<li>唐代改置「嘉州」，为蜀中重镇</li>
+<li>嘉州文人辈出：李白「问余何意栖碧山，笑而不答心自闲」</li>
+<li>宋代嘉定（今乐山）为四川西路治所，商贸繁盛</li>
+<li>大佛开凿于唐开元元年（713年），完工于贞元十九年（803年），历时90年</li>
+<li>宋代「嘉定白宰鸡」为当时名菜，今日仍有传承</li>
+</ul>
+<h3>明清 — 盐帮与码头文化</h3>
+<ul>
+<li>乐山大驿道为川盐入滇要道，盐帮菜体系在此形成</li>
+<li>三江码头繁忙，「搬运行李上船」为嘉州独特景观</li>
+<li>清代嘉州府辖今乐山、峨眉、夹江、犍为、沐川、马边、峨边等</li>
+</ul>
+<h3>近现代</h3>
+<ul>
+<li>1950年建乐山专区，1985年设地级乐山市</li>
+<li>2000年撤销乐山市，改设乐山市（地级），现辖市中区、沙湾区、五通桥区、金口河区，峨眉山市、犍为县、井研县、夹江县、沐川县、峨边县、马边县</li>
+<li>2026年川超联赛，乐山「味道非常队」活跃于川超赛场</li>
+</ul>
+<hr/>
+<h2>三、博物馆重点推荐</h2>
+<h3>乐山市博物馆（嘉州博物馆）</h3>
+<ul>
+<li>**镇馆之宝：** 汉代陶俑、犍为郡青铜器、宋代瓷器</li>
+<li>地址：市中区，与乐山大佛景区相邻</li>
+<li>建议：参观时间约1.5-2小时，免费（凭身份证）</li>
+</ul>
+<h3>乐山市嘉州古城遗址展示馆</h3>
+<ul>
+<li>展示嘉州古城考古成果</li>
+<li>适合对历史分层感兴趣者</li>
+</ul>
+<h3>峨眉山博物馆</h3>
+<ul>
+<li>峨眉山大佛文化、佛教文物</li>
+<li>金顶附近，参观时长约1小时</li>
+</ul>
+<h3>犍为县博物馆</h3>
+<ul>
+<li>三星堆式青铜器、僰人文化</li>
+<li>犍为县城内，适合深度历史游</li>
+</ul>
+<hr/>
+<h2>四、古建遗存巡礼</h2>
+<table class="report-table">
+<tr><th>名称</th><th>年代</th><th>特色</th><th>地址</th></tr>
+<tr><td>乐山大佛</td><td>唐（713-803年）</td><td>世界最大石刻弥勒佛，高71米</td><td>凌云山，三江交汇</td></tr>
+<tr><td>乌尤寺</td><td>唐代</td><td>乐山大佛景区配套古刹</td><td>乌尤山</td></tr>
+<tr><td>凌云寺</td><td>唐/清</td><td>大佛所在山巅古寺</td><td>凌云山顶</td></tr>
+<tr><td>峨眉山报国寺</td><td>明</td><td>峨眉山第一寺，清乾隆赐名</td><td>峨眉山麓</td></tr>
+<tr><td>万年寺</td><td>唐/明</td><td>峨眉山佛教中心，明代铜殿</td><td>峨眉山半山</td></tr>
+<tr><td>金顶</td><td>明</td><td>峨眉山主峰，十方普贤金像</td><td>海拔3079米</td></tr>
+<tr><td>沐川竹海</td><td>清</td><td>万亩竹林，「沐川竹海」</td><td>沐川县城南</td></tr>
+<tr><td>嘉州古城墙遗址</td><td>宋</td><td>嘉州古城遗迹</td><td>市区</td></tr>
+<tr><td>沙湾古镇</td><td>明</td><td>茶马古道驿站，「川西小瑞士」</td><td>沙湾区</td></tr>
+<tr><td>马边彝寨</td><td>清</td><td>彝族文化活态传承</td><td>马边县</td></tr>
+</table>
+<p><strong>特别提示：</strong></p>
+<ul>
+<li>乐山大佛栈道：从凌云山腰至大佛脚部，下方即为大渡河，视觉震撼</li>
+<li>大佛坐面高90.4米，头高14.7米，脚背宽8.5米</li>
+<li>乘船游三江（乌尤寺码头出发），白天票价约70元/人，可远眺大佛全貌</li>
+</ul>
+<hr/>
+<h2>五、特色美食探索</h2>
+<blockquote>「吃在四川，味在乐山」——乐山是UNESCO中国美食之都，2014年认证</blockquote>
+<h3>必吃清单（按优先级）</h3>
+<table class="report-table">
+<tr><th>美食</th><th>特色</th><th>推荐地点</th><th>价格参考</th></tr>
+<tr><td>**跷脚牛肉**</td><td>鲜嫩牛杂配香料清汤，「跷脚」吃法</td><td>苏稽镇「五世方」/「冯四娘」</td><td>30-50元/位</td></tr>
+<tr><td>**钵钵鸡**</td><td>冷锅串串，红油/藤椒双味，骨制</td><td>古真记/纪老四（黄鸡肉钵钵鸡）</td><td>15-25元/份</td></tr>
+<tr><td>**甜皮鸭**</td><td>甜卤鸭，皮棕红油亮，焦脆香甜</td><td>纪六娘/杨三串</td><td>50-80元/只</td></tr>
+<tr><td>**乐山麻辣烫**</td><td>发源地，醇厚锅底，非成都版</td><td>牛华镇（发源地）</td><td>50-80元/位</td></tr>
+<tr><td>**油炸串串**</td><td>乐山特色，一元一串</td><td>张公桥/嘉兴路</td><td>10-20元</td></tr>
+<tr><td>**豆腐脑**</td><td>鲜红辣椒配翠绿香菜，乐山版</td><td>市区老店</td><td>8-15元</td></tr>
+<tr><td>**咔饼**</td><td>烤饼夹菜，无排队版亦佳</td><td>张公桥</td><td>5-10元</td></tr>
+<tr><td>**嘉定白宰鸡**</td><td>宋代传承，「白宰」技法</td><td>嘉定白宰鸡老店</td><td>60-100元/只</td></tr>
+<tr><td>**冲鼻儿**</td><td>乐山特色小吃</td><td>市区</td><td>10-15元</td></tr>
+<tr><td>**三江汇生态鱼**</td><td>青江、岷江、大渡河野生鱼</td><td>三江汇生态鱼庄</td><td>人均80-120元</td></tr>
+</table>
+<h3>美食街区</h3>
+<ul>
+<li>**张公桥美食街**：经典打卡点，但游客多，本地人推荐**嘉兴路**</li>
+<li>**上中顺特色街区**：市中区，本地人日常消费地</li>
+<li>**苏稽镇**：翘脚牛肉发源地，「五世方」百年老店</li>
+<li>**牛华镇**：麻辣烫发源地，醇厚锅底独一份</li>
+<li>**沙湾古镇**：茶马古道风情，小吃+古建双体验</li>
+</ul>
+<hr/>
+<h2>六、Z世代玩乐指南</h2>
+<h3>年轻人打卡热点</h3>
+<ol>
+<li>**乐山大佛夜游**：夏季可乘船夜游三江，灯光下大佛剪影绝佳</li>
+<li>**上中顺街拍照**：复古民国风街区，汉服拍摄圣地</li>
+<li>**峨眉金顶云海**：云海+日出，摄影黄金时段（清晨6-8点）</li>
+<li>**沙湾古镇**：「川西小瑞士」，拍照+轻徒步</li>
+<li>**马边彝寨**：彝族文化体验，扎染/银饰/火把节</li>
+<li>**乐山市夜经济**：商K（商务KTV）、深夜麻辣烫、油炸串串</li>
+<li>**乐师百步梯**：乐山市内「燃烧卡路里」健身打卡点</li>
+<li>**川超观赛**：2026年「味道非常队」主场赛事，餐饮+足球跨界</li>
+</ul>
+<h3>拍照打卡</h3>
+<ul>
+<li>大佛佛头观景平台（2025年建成，外国游客最爱）</li>
+<li>乌尤寺码头乘船（70元/人，30分钟航程）</li>
+<li>峨眉金顶十方普贤金像（金顶3079米，金顶日出云海）</li>
+<li>沐川竹海（万亩竹林，「竹林七贤」意境）</li>
+</ul>
+<hr/>
+<h2>七、推荐行程路线</h2>
+<h3>三日经典线（大佛+峨眉+美食）</h3>
+<p><strong>Day 1：市区 + 乐山大佛</strong></p>
+<ul>
+<li>08:00 张公桥/嘉兴路吃早餐（豆腐脑+咔饼）</li>
+<li>10:00 乐山大佛景区（凌云山+乌尤寺，约3-4小时）</li>
+<li>栈道下行（从佛头至佛脚，视觉震撼）</li>
+<li>乌尤寺码头乘船远观大佛（70元/人）</li>
+<li>14:00 午餐：苏稽镇「五世方」跷脚牛肉</li>
+<li>15:00 上中顺特色街区（拍照+下午茶）</li>
+<li>18:00 晚餐：张公桥油炸串串+钵钵鸡</li>
+<li>20:00 夜游三江（夏季）</li>
+</ul>
+<p><strong>Day 2：峨眉山</strong></p>
+<ul>
+<li>07:00 早起进山（报国寺→万年寺→金顶）</li>
+<li>金顶云海+十方普贤金像（摄影黄金时段）</li>
+<li>12:00 山上素斋午餐（报国寺/万年寺）</li>
+<li>14:00 下山，途经「洗象池」（清代古建）</li>
+<li>16:00 市区：乐山博物馆（免费）</li>
+<li>18:00 晚餐：牛华镇正宗麻辣烫（发源地）</li>
+<li>20:00 上中顺夜宵（甜皮鸭+黑糖刨冰）</li>
+</ul>
+<p><strong>Day 3：沙湾古镇 + 美食补漏</strong></p>
+<ul>
+<li>08:30 沙湾古镇（茶马古道驿站，约2-3小时）</li>
+<li>12:00 午餐：沙湾古镇「嘉定白宰鸡」</li>
+<li>14:00 五通桥「甜城」（甜食品产地）</li>
+<li>16:00 马边彝寨（可选，彝族文化体验）</li>
+<li>18:00 返程</li>
+</ul>
+<h3>两日精华线（纯市区）</h3>
+<p><strong>Day 1：</strong> 张公桥→乐山大佛→乌尤寺→上中顺→夜宵</p>
+<p><strong>Day 2：</strong> 苏稽跷脚牛肉→牛华麻辣烫→乐山博物馆→沙湾古镇</p>
+<h3>四日深度线（含周边）</h3>
+<p>三日经典线 + <strong>Day 4：马边彝寨（扎染体验+彝族歌舞）或 沐川竹海（万亩竹林徒步）</strong></p>
+<hr/>
+<h2>八、实用信息</h2>
+<h3>交通</h3>
+<table class="report-table">
+<tr><th>方式</th><th>详情</th></tr>
+<tr><td>高铁</td><td>成都→乐山，约1.5小时；重庆→乐山，约2小时</td></tr>
+<tr><td>机场</td><td>乐山机场（在建/已通航，2024年通航）</td></tr>
+<tr><td>市内</td><td>大佛景区→市区，公交/打车约20分钟</td></tr>
+<tr><td>峨眉</td><td>乐山站→峨眉山，公交/打车约40分钟</td></tr>
+</table>
+<h3>门票参考（2026年）</h3>
+<table class="report-table">
+<tr><th>景点</th><th>票价</th></tr>
+<tr><td>乐山大佛</td><td>80元（含凌云山）</td></tr>
+<tr><td>乘船游三江</td><td>70元/人（乌尤寺码头）</td></tr>
+<tr><td>峨眉山（大门票）</td><td>160元（旺季）</td></tr>
+<tr><td>峨眉山观光车</td><td>90元（单程）</td></tr>
+<tr><td>乐山博物馆</td><td>免费</td></tr>
+<tr><td>沙湾古镇</td><td>免费</td></tr>
+</table>
+<h3>最佳季节</h3>
+<table class="report-table">
+<tr><th>季节</th><th>特点</th></tr>
+<tr><td>春季（3-5月）</td><td>杜鹃花盛开，峨眉山下花田</td></tr>
+<tr><td>夏季（6-8月）</td><td>大佛夜游旺季，凉风佛前，避热</td></tr>
+<tr><td>秋季（9-11月）</td><td>天高气爽，金顶云海概率最高</td></tr>
+<tr><td>冬季（12-2月）</td><td>金顶雾凇/雪景，年票优惠</td></tr>
+</table>
+<p><strong>最佳摄影季：</strong> 秋季（金顶云海+金顶日出概率最高）</p>
+<p><strong>最佳美食季：</strong> 全年（乐山美食无淡季）</p>
+<p><strong>最佳人少季：</strong> 冬季工作日（大佛景区人流最少）</p>
+<h3>住宿</h3>
+<ul>
+<li>**大佛景区附近**：乌尤山脚/凌云山脚，可看夜景</li>
+<li>**峨眉山下**：报国寺附近，素斋体验</li>
+<li>**市区**：上中顺/张公桥周边，美食方便</li>
+<li>**预算参考**：舒适型200-400元/晚，精品民宿300-600元/晚</li>
+</ul>
+<h3>注意事项</h3>
+<ul>
+<li>大佛景区栈道陡峭，恐高者慎选「佛脚→佛头」上行路线</li>
+<li>金顶海拔3079米，冬季可能有积雪，备防滑鞋</li>
+<li>夏季乘船游三江，防晒+带水</li>
+<li>峨眉素斋需提前1天预订（节假日）</li>
+<li>川超联赛期间（2026年），主场赛事需提前购票</li>
+</ul>
+<hr/>
+<h2>数据源说明</h2>
+<table class="report-table">
+<tr><th>来源</th><th>用途</th></tr>
+<tr><td>B站搜索</td><td>乐山大佛栈道、苏稽跷脚牛肉、张公桥美食街、牛华麻辣烫、金顶云海</td></tr>
+<tr><td>360搜索</td><td>乐山美食十大必吃、嘉州历史文化、沙湾古镇、乐山大佛文化</td></tr>
+<tr><td>知识库</td><td>历史分层、行程路线、门票价格、季节建议</td></tr>
+</table>
+<p><em>本报告基于2026年9月搜索数据，门票价格可能有变动，建议出行前核实。</em></p>
+  </div>
+
+</div>
+
+<footer>
+  报告生成时间：2026-09-27 · 数据来源：B站搜索 + 360搜索 + 知识库 · 门票价格出行前请核实
+</footer>
+
+</body>
+</html>
